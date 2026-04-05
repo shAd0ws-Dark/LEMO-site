@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrimoine Culturel - LEMO SENEGAL</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="flex flex-col">
+                        <span id="logo-text" class="text-2xl font-bold tracking-tighter text-g2-green">
+                            LEMO <span class="text-g2-yellow">SENEGAL</span>
+                        </span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-stone-500">
+                            Lendira-Mona
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Accueil</a>
+                        <a href="association.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Qui sommes-nous ?</a>
+                        <a href="patrimoine.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Patrimoine</a>
+                        <a href="apprentissage.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Apprentissage</a>
+                        <a href="espace-membre.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Espace Membre</a>
+                        <a href="contact.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Contact</a>
+                        <button class="bg-g2-green text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-forest-dark transition-all transform hover:scale-105">
+                            Adhérer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-stone-900">
+                        <i id="menu-icon" data-lucide="menu"></i>
+                        <i id="close-icon" data-lucide="x" class="hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-100 overflow-hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Accueil</a>
+                <a href="association.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Qui sommes-nous ?</a>
+                <a href="patrimoine.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Patrimoine</a>
+                <a href="apprentissage.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Apprentissage</a>
+                <a href="espace-membre.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Espace Membre</a>
+                <a href="contact.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Contact</a>
+                <div class="p-4">
+                    <button class="w-full bg-g2-green text-white px-6 py-3 rounded-xl text-lg font-semibold">
+                        Adhérer à l'association
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+        <!-- Heritage Hero -->
+        <section class="py-20 bg-forest-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">L'Âme du Haut-Ogooué</h1>
+                <p class="text-xl text-stone-400 max-w-3xl mx-auto">Découvrez les trésors de la province G2, entre traditions ancestrales et saveurs authentiques.</p>
+            </div>
+        </section>
+
+        <!-- Gastronomy -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                    <h2 class="text-3xl font-bold text-stone-900 px-4">Gastronomie Altogovéenne</h2>
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-stone-50 rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row card-hover">
+                        <div class="md:w-1/2 h-64 md:h-auto">
+                            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop" alt="Bouillon de poisson traditionnel du Gabon" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-4">Le Bouillon de Poisson</h3>
+                            <p class="text-stone-500 mb-6">Un plat emblématique, préparé avec des poissons frais de l'Ogooué, sublimé par des épices locales et des herbes de la forêt équatoriale.</p>
+                            <span class="text-g2-green font-bold text-sm uppercase tracking-widest">Spécialité G2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-stone-50 rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row card-hover">
+                        <div class="md:w-1/2 h-64 md:h-auto">
+                            <img src="https://images.unsplash.com/photo-1590076215667-875d4ef2d7ce?q=80&w=2070&auto=format&fit=crop" alt="Bâtons de manioc de Moanda" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-4">Le Manioc de Moanda</h3>
+                            <p class="text-stone-500 mb-6">Réputé pour sa finesse et sa texture unique, le bâton de manioc accompagne tous nos repas de fête. Un savoir-faire transmis de génération en génération.</p>
+                            <span class="text-g2-yellow font-bold text-sm uppercase tracking-widest">Trésor Local</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditions -->
+        <section class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                    <h2 class="text-3xl font-bold text-stone-900 px-4">Traditions & Folklore</h2>
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl card-hover">
+                        <div class="w-12 h-12 bg-g2-blue/10 rounded-xl flex items-center justify-center text-g2-blue mb-6">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Danses Batéké</h3>
+                        <p class="text-stone-500">Les rythmes envoûtants des plateaux Batéké, où chaque mouvement raconte une histoire de bravoure et de connexion avec la nature.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl card-hover">
+                        <div class="w-12 h-12 bg-g2-green/10 rounded-xl flex items-center justify-center text-g2-green mb-6">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Artisanat Obamba</h3>
+                        <p class="text-stone-500">La vannerie et la forge, des arts ancestraux qui témoignent de l'ingéniosité et de la patience de nos artisans.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl card-hover">
+                        <div class="w-12 h-12 bg-sn-red/10 rounded-xl flex items-center justify-center text-sn-red mb-6">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Contes & Légendes</h3>
+                        <p class="text-stone-500">La transmission orale, pilier de notre identité, où les anciens partagent la sagesse de l'Ogooué avec les plus jeunes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex flex-col mb-8">
+                        <span class="text-3xl font-bold tracking-tighter">
+                            LEMO <span class="text-g2-yellow">SENEGAL</span>
+                        </span>
+                        <span class="text-xs uppercase tracking-[0.3em] font-medium text-stone-500">
+                            Lendira-Mona
+                        </span>
+                    </div>
+                    <p class="text-stone-400 text-lg max-w-md leading-relaxed mb-8">
+                        L'association qui unit les ressortissants du Haut-Ogooué au Sénégal. Ensemble pour la solidarité et le rayonnement de notre culture.
+                    </p>
+                    <p class="italic text-g2-yellow mb-8">
+                        "Mona na mona, lendira na lendira" <br>
+                        <span class="text-xs text-stone-500">— Proverbe Obamba : L'union des cœurs forge le destin.</span>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors"><i data-lucide="facebook" size="18"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors"><i data-lucide="instagram" size="18"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors"><i data-lucide="twitter" size="18"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors"><i data-lucide="youtube" size="18"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-stone-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="association.html" class="hover:text-white transition-colors">Qui sommes-nous ?</a></li>
+                        <li><a href="patrimoine.html" class="hover:text-white transition-colors">Patrimoine</a></li>
+                        <li><a href="apprentissage.html" class="hover:text-white transition-colors">Apprentissage</a></li>
+                        <li><a href="espace-membre.html" class="hover:text-white transition-colors">Espace Membre</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Contact</h4>
+                    <ul class="space-y-6 text-stone-400">
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-g2-yellow shrink-0"></i>
+                            <span>Dakar, Sénégal <br>Quartier Amitié 2</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="phone" class="text-g2-yellow shrink-0"></i>
+                            <span>+221 33 000 00 00</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="mail" class="text-g2-yellow shrink-0"></i>
+                            <span>contact@lemo-senegal.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-stone-500 text-sm">
+                <p>© 2026 LEMO SENEGAL. Tous droits réservés.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Mentions légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

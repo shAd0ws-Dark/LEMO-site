@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage & Lexique - LEMO SENEGAL</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="flex flex-col">
+                        <span id="logo-text" class="text-2xl font-bold tracking-tighter text-g2-green">
+                            LEMO <span class="text-g2-yellow">SENEGAL</span>
+                        </span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-stone-500">
+                            Lendira-Mona
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Accueil</a>
+                        <a href="association.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Qui sommes-nous ?</a>
+                        <a href="patrimoine.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Patrimoine</a>
+                        <a href="apprentissage.html" class="nav-link nav-text text-g2-green font-bold">Apprentissage</a>
+                        <a href="espace-membre.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Espace Membre</a>
+                        <a href="contact.html" class="nav-link nav-text text-stone-700 hover:text-g2-green">Contact</a>
+                        <button class="bg-g2-green text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-forest-dark transition-all transform hover:scale-105">
+                            Adhérer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-stone-900">
+                        <i id="menu-icon" data-lucide="menu"></i>
+                        <i id="close-icon" data-lucide="x" class="hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-100 overflow-hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Accueil</a>
+                <a href="association.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Qui sommes-nous ?</a>
+                <a href="patrimoine.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Patrimoine</a>
+                <a href="apprentissage.html" class="block px-3 py-4 text-base font-medium text-g2-green font-bold border-b border-stone-50">Apprentissage</a>
+                <a href="espace-membre.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Espace Membre</a>
+                <a href="contact.html" class="block px-3 py-4 text-base font-medium text-stone-700 hover:bg-stone-50 hover:text-g2-green border-b border-stone-50">Contact</a>
+                <div class="p-4">
+                    <button class="w-full bg-g2-green text-white px-6 py-3 rounded-xl text-lg font-semibold">
+                        Adhérer à l'association
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="py-20 bg-g2-green text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Apprentissage & Lexique</h1>
+                <p class="text-xl text-stone-100 max-w-3xl mx-auto">Préservez et transmettez la richesse linguistique du Haut-Ogooué. Apprenez les bases de l'Obamba et du Téké.</p>
+                <div class="mt-8 inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm border border-white/20">
+                    <i data-lucide="lock" class="w-4 h-4 text-g2-yellow"></i>
+                    <span>Zone Premium : Accès réservé aux membres à jour</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Module: Les Bases -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                    <h2 class="text-3xl font-bold text-stone-900 px-4">Les Bases : Salutations</h2>
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                </div>
+
+                <div class="mb-8 max-w-md">
+                    <div class="relative">
+                        <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 w-5 h-5"></i>
+                        <input type="text" id="table-search" placeholder="Rechercher un mot ou une expression..." class="w-full pl-12 pr-4 py-3 bg-stone-50 border border-stone-200 rounded-2xl focus:ring-2 focus:ring-g2-green outline-none transition-all">
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto bg-stone-50 rounded-3xl border border-stone-100 shadow-sm">
+                    <table id="salutations-table" class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-stone-100/50">
+                                <th class="p-6 font-bold text-stone-900 border-b border-stone-200">Français</th>
+                                <th class="p-6 font-bold text-g2-green border-b border-stone-200">Obamba (Lembaama)</th>
+                                <th class="p-6 font-bold text-g2-blue border-b border-stone-200">Téké</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-200">
+                            <!-- Source Linguistique: Rapidolangue (Fondation Raponda-Walker) & Parlons Téké (E. Etsio) -->
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="sun" class="w-5 h-5 text-g2-yellow"></i> Bonjour</td>
+                                <td class="p-6 font-medium italic">Ambolo / Mbolo</td>
+                                <td class="p-6 font-medium italic">Ndzou / Ndjou</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="heart" class="w-5 h-5 text-sn-red"></i> Merci</td>
+                                <td class="p-6 font-medium italic">Akiba</td>
+                                <td class="p-6 font-medium italic">Ndzari / Akiba</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="smile" class="w-5 h-5 text-g2-green"></i> Bienvenue</td>
+                                <td class="p-6 font-medium italic">Mona na mona</td>
+                                <td class="p-6 font-medium italic">Kuo mbe</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-stone-400"></i> Comment ça va ?</td>
+                                <td class="p-6 font-medium italic">O dju mbe ?</td>
+                                <td class="p-6 font-medium italic">O dju kadi ?</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="users" class="w-5 h-5 text-g2-blue"></i> La famille (Clan)</td>
+                                <td class="p-6 font-medium italic">Li-kanda</td>
+                                <td class="p-6 font-medium italic">Kadi</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="utensils" class="w-5 h-5 text-stone-600"></i> La nourriture</td>
+                                <td class="p-6 font-medium italic">O-djou / Kudia</td>
+                                <td class="p-6 font-medium italic">Kudia</td>
+                            </tr>
+                            <tr class="hover:bg-white transition-colors">
+                                <td class="p-6 flex items-center gap-3"><i data-lucide="home" class="w-5 h-5 text-earth-brown"></i> La maison</td>
+                                <td class="p-6 font-medium italic">N-dzou</td>
+                                <td class="p-6 font-medium italic">N-dzou</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Proverbes -->
+        <section class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                    <h2 class="text-3xl font-bold text-stone-900 px-4">Sagesse du Haut-Ogooué</h2>
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 card-hover">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="bg-g2-green/10 text-g2-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Obamba</span>
+                            <i data-lucide="quote" class="text-stone-200"></i>
+                        </div>
+                        <p class="text-xl font-display italic mb-4 text-stone-900">"Mwana onkede, mwan'a tata."</p>
+                        <p class="text-stone-500 text-sm mb-4"><strong>Traduction :</strong> "L'enfant d'autrui est aussi l'enfant du père."</p>
+                        <div class="pt-4 border-t border-stone-50">
+                            <p class="text-xs text-stone-400 leading-relaxed">Cette sagesse souligne la solidarité familiale et communautaire : nous sommes tous responsables les uns des autres.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 card-hover">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="bg-g2-blue/10 text-g2-blue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Téké</span>
+                            <i data-lucide="quote" class="text-stone-200"></i>
+                        </div>
+                        <p class="text-xl font-display italic mb-4 text-stone-900">"Kuo mbe, kadi mbe."</p>
+                        <p class="text-stone-500 text-sm mb-4"><strong>Traduction :</strong> "Si le pied part, le cœur part aussi."</p>
+                        <div class="pt-4 border-t border-stone-50">
+                            <p class="text-xs text-stone-400 leading-relaxed">L'action suit l'intention. Ce proverbe rappelle l'importance de l'engagement total dans ce que l'on entreprend.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 card-hover">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="bg-g2-yellow/10 text-g2-yellow text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Général G2</span>
+                            <i data-lucide="quote" class="text-stone-200"></i>
+                        </div>
+                        <p class="text-xl font-display italic mb-4 text-stone-900">"Un jeune qui voyage beaucoup est plus âgé qu'un vieux qui est resté au village."</p>
+                        <div class="pt-4 border-t border-stone-50">
+                            <p class="text-xs text-stone-400 leading-relaxed">Souligne la valeur de l'expérience, de la découverte et de l'ouverture d'esprit acquises par le voyage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interface Apprentissage: Quiz -->
+        <section class="py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-forest-dark rounded-[2.5rem] p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-g2-yellow/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                    
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                            <i data-lucide="brain-circuit" class="text-g2-yellow"></i>
+                            Quiz Express
+                        </h2>
+                        
+                        <div id="quiz-container">
+                            <div id="quiz-question" class="text-xl mb-8 font-medium">Chargement du quiz...</div>
+                            <div id="quiz-options" class="grid gap-4">
+                                <!-- Options will be injected here -->
+                            </div>
+                            <div id="quiz-feedback" class="mt-8 hidden p-4 rounded-2xl text-center font-bold"></div>
+                            <button id="next-question" class="mt-8 hidden w-full bg-g2-yellow text-stone-900 py-4 rounded-2xl font-bold hover:bg-white transition-colors">
+                                Question Suivante
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ressources Externes -->
+        <section class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                    <h2 class="text-3xl font-bold text-stone-900 px-4">Ressources & Bibliographie</h2>
+                    <div class="h-px flex-1 bg-stone-200"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold flex items-center gap-2">
+                            <i data-lucide="book-open" class="text-g2-green"></i>
+                            Ouvrages de référence
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                                <p class="font-bold text-stone-900">Méthode Rapidolangue</p>
+                                <p class="text-sm text-stone-500">Fondation Raponda-Walker. La référence absolue pour le Lembaama (Obamba).</p>
+                            </li>
+                            <li class="bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                                <p class="font-bold text-stone-900">Dictionnaire Ndumu-Mbede-Français</p>
+                                <p class="text-sm text-stone-500">R.P. Biton. Une mine d'or pour le vocabulaire traditionnel.</p>
+                            </li>
+                            <li class="bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                                <p class="font-bold text-stone-900">Parlons Téké</p>
+                                <p class="text-sm text-stone-500">Édouard Etsio. Lie la grammaire à la culture (Congo/Gabon).</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold flex items-center gap-2">
+                            <i data-lucide="globe" class="text-g2-blue"></i>
+                            Plateformes Numériques
+                        </h3>
+                        <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
+                            <p class="text-stone-600 mb-6">Pour aller plus loin et écouter les prononciations authentiques, nous vous recommandons :</p>
+                            <a href="https://langues241.org" target="_blank" class="flex items-center justify-between p-4 bg-stone-50 rounded-2xl hover:bg-g2-green/5 transition-colors group">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 bg-g2-green text-white rounded-xl flex items-center justify-center">
+                                        <i data-lucide="external-link"></i>
+                                    </div>
+                                    <span class="font-bold text-stone-900">Langues241.org</span>
+                                </div>
+                                <i data-lucide="chevron-right" class="text-stone-300 group-hover:text-g2-green transition-colors"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex flex-col mb-8">
+                        <span class="text-3xl font-bold tracking-tighter">
+                            LEMO <span class="text-g2-yellow">SENEGAL</span>
+                        </span>
+                        <span class="text-xs uppercase tracking-[0.3em] font-medium text-stone-500">
+                            Lendira-Mona
+                        </span>
+                    </div>
+                    <p class="text-stone-400 text-lg max-w-md leading-relaxed mb-8">
+                        L'association qui unit les ressortissants du Haut-Ogooué au Sénégal. Ensemble pour la solidarité et le rayonnement de notre culture.
+                    </p>
+                    <p class="italic text-g2-yellow mb-8">
+                        "Mona na mona, lendira na lendira" <br>
+                        <span class="text-xs text-stone-500">— Proverbe Obamba : L'union des cœurs forge le destin.</span>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors" aria-label="Facebook LEMO SENEGAL"><i data-lucide="facebook" size="18"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors" aria-label="Instagram LEMO SENEGAL"><i data-lucide="instagram" size="18"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors" aria-label="Twitter LEMO SENEGAL"><i data-lucide="twitter" size="18"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-g2-green transition-colors" aria-label="Youtube LEMO SENEGAL"><i data-lucide="youtube" size="18"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Navigation</h4>
+                    <ul class="space-y-4 text-stone-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="association.html" class="hover:text-white transition-colors">Qui sommes-nous ?</a></li>
+                        <li><a href="patrimoine.html" class="hover:text-white transition-colors">Patrimoine</a></li>
+                        <li><a href="apprentissage.html" class="hover:text-white transition-colors">Apprentissage</a></li>
+                        <li><a href="espace-membre.html" class="hover:text-white transition-colors">Espace Membre</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Contact</h4>
+                    <ul class="space-y-6 text-stone-400">
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-g2-yellow shrink-0"></i>
+                            <span>Dakar, Sénégal <br>Quartier Amitié 2</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="phone" class="text-g2-yellow shrink-0"></i>
+                            <span>+221 33 000 00 00</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="mail" class="text-g2-yellow shrink-0"></i>
+                            <span>contact@lemo-senegal.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-stone-500 text-sm">
+                <p>© 2026 LEMO SENEGAL. Tous droits réservés.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Mentions légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/learning.js"></script>
+</body>
+</html>

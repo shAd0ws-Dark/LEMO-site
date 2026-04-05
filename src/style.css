@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-g2-green: #009E60;
+  --color-g2-yellow: #FCD116;
+  --color-g2-blue: #4671C6;
+  --color-sn-red: #E31B23;
+  --color-earth-brown: #A67B5B;
+  --color-forest-dark: #1B3012;
+  
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-stone-50 text-stone-900 scroll-smooth;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+/* Custom Utility Classes */
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(27,48,18,0.8));
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-stone-200;
+}
+
+.nav-link {
+  @apply px-3 py-2 rounded-md text-sm font-medium transition-colors;
+}
+
+.mobile-menu-open {
+  @apply overflow-hidden;
+}
+
+/* Chatbot Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Chatbot Specific Styles */
+#lendira-chat-window {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+#lendira-bubble::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-g2-green);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#lendira-bubble:hover::after {
+  opacity: 1;
+  inset: -8px;
+}
