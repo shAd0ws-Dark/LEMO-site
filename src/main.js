@@ -1,4 +1,5 @@
 // Shared JavaScript for MPA
+import './style.css';
 import { createIcons, icons } from 'lucide';
 import LendiraBot from './chatbot';
 

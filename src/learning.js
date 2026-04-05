@@ -1,4 +1,5 @@
 // Learning & Quiz Logic for LEMO SENEGAL
+import './style.css';
 import { createIcons, icons } from 'lucide';
 import LendiraBot from './chatbot';
 
